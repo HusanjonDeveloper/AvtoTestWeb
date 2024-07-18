@@ -1,3 +1,6 @@
+using AvtoTest.Data.Repositories;
+using AvtoTest.Services.Services;
+
 namespace AvtoTest.MVC
 {
     public class Program
@@ -9,6 +12,12 @@ namespace AvtoTest.MVC
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddScoped<TestRepository>();
+            builder.Services.AddScoped<TestService>();
+            
+            
+            
+            
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
