@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvtoTest.Data", "AvtoTest.Data\AvtoTest.Data.csproj", "{B67AB70F-46AF-4FD4-9E9A-03C652ECFB6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvtoTest.MVC", "AvtoTest.MVC\AvtoTest.MVC.csproj", "{98CDE1EC-37EF-4576-916C-03A9BD73233B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +17,15 @@ Global
 		{B67AB70F-46AF-4FD4-9E9A-03C652ECFB6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B67AB70F-46AF-4FD4-9E9A-03C652ECFB6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B67AB70F-46AF-4FD4-9E9A-03C652ECFB6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CDE1EC-37EF-4576-916C-03A9BD73233B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CDE1EC-37EF-4576-916C-03A9BD73233B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CDE1EC-37EF-4576-916C-03A9BD73233B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CDE1EC-37EF-4576-916C-03A9BD73233B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {805EA01D-B322-4A6A-9D2A-5DC3508945BE}
 	EndGlobalSection
 EndGlobal
