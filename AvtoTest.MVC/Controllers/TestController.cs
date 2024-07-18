@@ -1,0 +1,30 @@
+using AvtoTest.Data.Entities.TestEntities;
+using AvtoTest.Services.Services;
+using Microsoft.AspNetCore.Mvc;
+
+namespace AvtoTest.MVC.Controllers
+{
+    public class TestController : Controller
+    {
+        private readonly TestService _testService;
+        public IActionResult GetTests(Ticket ticket)
+        {
+            var tests = _testService.Tests.Where(x => x.Id  >= 
+                ticket.StartIndex && x.Id <= ticket.EndIndex).ToList();
+            
+            return View(tests);
+        }
+
+        public IActionResult Tickets()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Tickets(byte id)
+        {
+            var ticket = new Ticket() { Id = id };
+            return RedirectToAction("GetTests", ticket);
+        }
+    }
+}
