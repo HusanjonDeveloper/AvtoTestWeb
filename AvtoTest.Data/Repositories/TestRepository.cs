@@ -5,7 +5,8 @@ namespace AvtoTest.Data.Repositories;
 
 public class TestRepository
 {
-    private string Path { get; set; }
+    private string Path { get; set; } =
+        "\\\\Mac\\Home\\Documents\\GitHub\\AvtoTestWeb\\AvtoTest.Data\\bin\\Debug\\net7.0\\";
 
     public List<Test> ReadFromDile(string? Language = null)
     {

@@ -7,6 +7,11 @@ namespace AvtoTest.MVC.Controllers
     public class TestController : Controller
     {
         private readonly TestService _testService;
+
+        public TestController(TestService testService)
+        {
+            _testService = testService;
+        }
         public IActionResult GetTests(Ticket ticket)
         {
             var tests = _testService.Tests.Where(x => x.Id  >= 
